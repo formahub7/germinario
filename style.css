@@ -1666,5 +1666,61 @@ body {
   text-align: center !important;
   margin-left: auto !important;
   margin-right: auto !important;
+}/* ====== HEADER / NAV ====== */
+.nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
 }
+
+/* Menú en escritorio */
+.nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.hamburger {
+    display: none;
+}
+
+/* ====== MOBILE NAV ====== */
+@media (max-width: 900px) {
+    .hamburger {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        cursor: pointer;
+    }
+
+    .hamburger .bar {
+        width: 22px;
+        height: 2px;
+        background: #404F54; /* tu verde grisáceo */
+        border-radius: 999px;
+    }
+
+    /* Por defecto, el menú NO se ve en mobile */
+    .nav-menu {
+        position: absolute;
+        top: 70px; /* aprox. altura del header */
+        right: 0;
+        left: 0;
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+        padding: 1.5rem 1.25rem 2rem;
+        background: #fff6f0;
+        box-shadow: 0 12px 30px rgba(0, 0, 0, 0.06);
+        z-index: 999;
+    }
+
+    /* Cuando el JS agrega .active, AHÍ se muestra */
+    .nav-menu.active {
+        display: flex;
+    }
+}
+
   
