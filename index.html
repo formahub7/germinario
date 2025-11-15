@@ -1,48 +1,63 @@
 <!DOCTYPE html>
 <html lang="es">
-<!-- SEO general -->
-<meta name="description" content="FormaHub — Acompañamos ideas con diseño simple, comunicación clara y herramientas accesibles. Cursos, comunidad y recursos para personas reales con proyectos reales.">
-<meta name="keywords" content="forma hub, cursos de diseño, diseño simple, comunicación visual, creatividad, herramientas creativas, formación online">
-<meta name="author" content="Laura Strumia">
+<head>
 
-<!-- Open Graph (redes sociales) -->
-<meta property="og:title" content="FormaHub — Te acompañamos a darle forma a tus ideas">
-<meta property="og:description" content="Cursos, comunidad y herramientas creativas para que puedas crear con claridad y confianza.">
-<meta property="og:image" content="https://formahub.ar/recursos/imagen/logoformahub.png">
-<meta property="og:url" content="https://formahub.ar">
-<meta property="og:type" content="website">
+    <!-- Google tag (Analytics) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GLRCDVB6R4"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-GLRCDVB6R4');
+    </script>
 
-<title>FormaHub — Te acompañamos a darle forma a tus ideas</title>
-<head><script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "FormaHub",
-  "url": "https://formahub.ar",
-  "logo": "https://formahub.ar/recursos/imagen/logoformahub.png",
-  "founder": {
-    "@type": "Person",
-    "name": "Laura Strumia"
-  },
-  "description": "Plataforma creativa donde las ideas germinan. Diseño simple, comunicación clara y herramientas accesibles.",
-  "contactPoint": {
-    "@type": "ContactPoint",
-    "contactType": "Atención general",
-    "url": "https://formahub.ar/contacto.html"
-  }
-}
-</script>
-
+    <!-- SEO general -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="FormaHub — Acompañamos ideas con diseño simple, comunicación clara y herramientas accesibles. Cursos, comunidad y recursos para personas reales con proyectos reales.">
+    <meta name="keywords" content="forma hub, cursos de diseño, diseño simple, comunicación visual, creatividad, herramientas creativas, formación online">
+    <meta name="author" content="Laura Strumia">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="FormaHub — Te acompañamos a darle forma a tus ideas">
+    <meta property="og:description" content="Cursos, comunidad y herramientas creativas para que puedas crear con claridad y confianza.">
+    <meta property="og:image" content="https://formahub.ar/recursos/imagen/logoformahub.png">
+    <meta property="og:url" content="https://formahub.ar">
+    <meta property="og:type" content="website">
+
     <title>FormaHub — Ideas que germinan</title>
-    <meta name="description" content="Un espacio cálido donde las ideas germinan. Diseño, comunicación y comunidad para llevar tus proyectos a la vida real.">
-    
+
+    <!-- JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "FormaHub",
+      "url": "https://formahub.ar",
+      "logo": "https://formahub.ar/recursos/imagen/logoformahub.png",
+      "founder": {
+        "@type": "Person",
+        "name": "Laura Strumia"
+      },
+      "description": "Plataforma creativa donde las ideas germinan. Diseño simple, comunicación clara y herramientas accesibles.",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "Atención general",
+        "url": "https://formahub.ar/contacto.html"
+      }
+    }
+    </script>
+
     <!-- Fuentes -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Estilos -->
     <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
+
     <!-- Header -->
     <header class="header">
         <nav class="navbar">
@@ -90,7 +105,6 @@
                 <div class="hero-visual">
                     <div class="image-container">
                         <img src="assets/img/mesa-cuaderno.png" alt="Espacio de trabajo creativo" class="hero-image" loading="lazy">
-                        <!-- Círculos flotantes -->
                         <div class="floating-shape shape-1"></div>
                         <div class="floating-shape shape-2"></div>
                         <div class="floating-shape shape-3"></div>
@@ -133,18 +147,16 @@
             </div>
         </section>
 
-        <!-- Mini curso gratuito -->
+        <!-- Mini curso -->
         <section class="cta-section" id="descubrir">
             <div class="container">
                 <div class="cta-content">
                     <h2 class="section-title">Empezá con un primer paso simple</h2>
                     <p class="section-subtitle">Te regalamos "Amigate con tus ideas" - un mini curso para darle forma a esas intuiciones que tenés guardadas.</p>
                     
-                    <!-- CURSO GRATUITO CON ESTILO -->
                     <div class="cta-card">
                         <div class="cta-image">
                             <img src="assets/img/cuadernoabierto.png" alt="Amigate con tus ideas" loading="lazy">
-                            <!-- Círculos flotantes -->
                             <div class="floating-shape shape-1"></div>
                             <div class="floating-shape shape-3"></div>
                         </div>
@@ -164,7 +176,7 @@
             </div>
         </section>
 
-        <!-- Germinario preview -->
+        <!-- Germinario -->
         <section class="germinario-preview">
             <div class="container">
                 <h2 class="section-title">El Germinario</h2>
@@ -252,6 +264,7 @@
         </div>
     </footer>
 
-   <script src="script.js"></script>
+    <script src="script.js"></script>
+
 </body>
 </html>
