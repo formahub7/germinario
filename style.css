@@ -1,7 +1,3 @@
-/* =========================================
-   FORMAHUB - CSS COMPLETO Y CORREGIDO
-   ========================================= */
-
 :root {
   /* Colores principales */
   --azul: #404f54;
@@ -1666,61 +1662,54 @@ body {
   text-align: center !important;
   margin-left: auto !important;
   margin-right: auto !important;
-}/* ====== HEADER / NAV ====== */
-.nav-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 2rem;
+}/* Fondo blanco total */
+.contacto-page,
+.contacto-hero,
+.formulario-contacto,
+.contacto-newsletter,
+.contacto-cta {
+    background-color: #ffffff;
 }
 
-/* Menú en escritorio */
-.nav-menu {
-    display: flex;
-    align-items: center;
-    gap: 1.5rem;
+/* Formulario de newsletter sin fondo gris */
+.contacto-newsletter .sib-form {
+    background-color: #ffffff !important;
 }
 
-.hamburger {
-    display: none;
+/* Tarjetas internas con un borde muy sutil */
+.formulario-content,
+.info-card {
+    background-color: #ffffff;
+    border: 1px solid #f0e6dd;
+}/* --- Arreglo visual del bloque Jardín de Ideas (Brevo) --- */
+
+/* Que toda la sección donde va el formulario tenga fondo blanco */
+.contacto-newsletter,
+.newsletter-section,
+.jardin-ideas,
+.jardin-de-ideas {
+    background-color: #ffffff !important;
 }
 
-/* ====== MOBILE NAV ====== */
-@media (max-width: 900px) {
-    .hamburger {
-        display: flex;
-        flex-direction: column;
-        gap: 4px;
-        cursor: pointer;
-    }
-
-    .hamburger .bar {
-        width: 22px;
-        height: 2px;
-        background: #404F54; /* tu verde grisáceo */
-        border-radius: 999px;
-    }
-
-    /* Por defecto, el menú NO se ve en mobile */
-    .nav-menu {
-        position: absolute;
-        top: 70px; /* aprox. altura del header */
-        right: 0;
-        left: 0;
-        display: none;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 1rem;
-        padding: 1.5rem 1.25rem 2rem;
-        background: #fff6f0;
-        box-shadow: 0 12px 30px rgba(0, 0, 0, 0.06);
-        z-index: 999;
-    }
-
-    /* Cuando el JS agrega .active, AHÍ se muestra */
-    .nav-menu.active {
-        display: flex;
-    }
+/* Forzar a que el contenedor de Brevo también sea blanco */
+.sib-form,
+#sib-container,
+#sib-form-container {
+    background-color: #ffffff !important;
 }
 
-  
+/* Opcional: que no parezca “tarjeta dentro de tarjeta” */
+.sib-form {
+    box-shadow: none !important;
+    border: none !important;
+}/* --- 1) Jardín de Ideas del inicio con fondo blanco --- */
+.newsletter-section {
+  background: #ffffff;           /* sin franja oscura */
+  color: var(--grafito);         /* texto gris lindo */
+}
+
+/* --- 2) Margen para el botón "Conocer más" bajo las tarjetas --- */
+.germinario-preview .btn {
+  margin-top: 2.5rem;
+  margin-bottom: 3.5rem;
+}
